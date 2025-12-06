@@ -93,6 +93,8 @@ pub fn entrypointWithUserdata(
                 if (p_level == c.GDEXTENSION_INITIALIZATION_CORE) {
                     // TODO: remove
                     register.deinit();
+                    _ = heap.debug_allocator.deinit();
+
                 }
             }
         }
